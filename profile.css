@@ -1,0 +1,187 @@
+/* Genel Body ve Arka Plan Ayarları */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #003366, #66b3ff); /* Lacivertten Soft Maviye geçiş */
+    display: flex;
+    height: 100vh;
+    color: #fff; /* Yazı rengi beyaz olarak ayarlandı */
+}
+
+
+.sidebar {
+    width: 250px;
+    background: linear-gradient(135deg, #003366, #66b3ff); /* Sidebar için renk geçişi */
+    padding: 30px 20px;
+    border-right: 1px solid #ddd;
+    height: 100%;
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: background 0.3s ease; /* Geçiş efekti */
+}
+
+.sidebar h4 {
+    font-weight: bold;
+    color: #fff; /* Başlık rengi beyaz */
+    margin-bottom: 20px;
+    font-size: 22px; /* Daha büyük başlık */
+    text-align: center;
+}
+
+/* Sidebar Bağlantıları */
+.sidebar ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sidebar ul li {
+    padding: 8px 0;
+}
+
+.sidebar ul li a {
+    display: block;
+    padding: 12px;
+    background-color: transparent; /* Bağlantıların arka planı şeffaf */
+    color: #fff; /* Yazı rengi beyaz */
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500; /* Orta büyüklükte font */
+    text-align: center;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Geçiş efekti */
+}
+
+/* Bağlantı Hover Efekti */
+.sidebar ul li a:hover {
+    background-color: #66b3ff; /* Hoverda açık mavi */
+    transform: scale(1.05); /* Hover ile büyüme efekti */
+    border-radius: 8px; /* Köşe yuvarlama */
+}
+
+/* Sidebar Çıkış Butonu */
+.cikis-btn {
+    margin-top: auto; /* Çıkış butonunu en alt kısma çeker */
+}
+
+.btn-danger {
+    width: 100%;
+    padding: 12px;
+    font-weight: bold;
+    background-color: #ff4d4d; /* Çıkış butonu için kırmızı renk */
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-danger:hover {
+    background-color: #ff3333; /* Hoverda daha koyu kırmızı */
+}
+
+/* Sidebar Hover Efekti */
+.sidebar:hover {
+    background: linear-gradient(135deg, #66b3ff, #003366); /* Sidebar üzerine gelince renk geçişi */
+}
+
+/* Sidebar içerisindeki profil ismi ve başlık */
+.sidebar h4 {
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Genel Görünüm */
+.content {
+    flex: 1;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.9); /* Soft beyaz arka plan */
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
+    margin-top: 20px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* Hoşgeldiniz Başlığı */
+.content h2 {
+    font-size: 28px;
+    color: #003366; /* Lacivert başlık */
+    font-weight: bold;
+}
+
+/* Hoşgeldiniz Başlığı */
+.content h2 {
+    font-size: 28px;
+    color: #003366; /* Lacivert başlık */
+    font-weight: bold;
+}
+
+/* Kartlar için Düzenleme */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Kart Tasarımı */
+.card {
+    min-width: 18rem;
+    flex: 0 0 auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background 0.3s ease; /* Kart hover etkisi ve renk geçişi */
+    background: linear-gradient(135deg, #003366, #66b3ff); /* Kart üzerinde geçiş */
+    color: #fff; /* Kart yazıları beyaz */
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff; /* Başlık rengi beyaz */
+}
+
+.card-text {
+    font-size: 14px;
+    color: #f1f1f1; /* Açık gri metin */
+}
+
+.card-link {
+    text-decoration: none;
+    color: #ffffff; /* Mavi link rengi */
+}
+
+.card-link:hover {
+    text-decoration: underline;
+}
+
+/* Kart Hover Etkisi - Fare ile üzerine gelince hafif kaldırma efekti ve renk değişikliği */
+.card:hover {
+    transform: translateY(-10px); /* Kartı yukarıya doğru kaydır */
+    background: linear-gradient(135deg, #66b3ff, #003366); /* Hover ile renk değişikliği */
+}
+
+/* Çıkış Butonu */
+.cikis-btn {
+    margin-top: auto; /* Butonu en alta çeker */
+}
+
+.btn-danger {
+    width: 100%;
+    padding: 10px;
+    font-weight: bold;
+}

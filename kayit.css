@@ -1,0 +1,78 @@
+/* Body ayarları - tam ortalama */
+body {
+    background: url('img/notback.jpg') no-repeat center center fixed;
+    background-size: cover;
+    backdrop-filter: blur(2px);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Dış container artık gerek yok, kaldırabiliriz veya 100% genişlik veririz */
+.container {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+/* Form kartı */
+.cards {
+    background: rgba(173, 216, 230, 0.8); /* soft mavi ve saydam */
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    padding: 40px 30px;
+    width: 90%;
+    max-width: 400px;
+    animation: slideUp 1s ease-out;
+    text-align: center;
+}
+
+/* Form inputları */
+.form-control {
+    background: rgba(255, 255, 255, 0.7);
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+    margin-top: 10px;
+}
+
+/* Butonlar */
+.btn-primary {
+    background-color: #4a90e2;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 25px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #357ABD;
+}
+
+/* Animasyon */
+@keyframes slideUp {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+/* Label ayarları */
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Hatalı inputlar */
+.is-invalid {
+    border: 2px solid #ff6b6b;
+}
